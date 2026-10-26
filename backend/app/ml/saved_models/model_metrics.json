@@ -1,0 +1,41 @@
+{
+  "model_name": "CognitiveCare Difficulty Adaptation Recommender",
+  "algorithm": "RandomForestClassifier",
+  "n_estimators": 100,
+  "max_depth": 8,
+  "accuracy": 0.754,
+  "macro_f1": 0.7491,
+  "baseline_accuracy": 0.704,
+  "baseline_macro_f1": 0.6885,
+  "feature_names": [
+    "game_type",
+    "previous_difficulty",
+    "accuracy_percentage",
+    "avg_response_time_seconds",
+    "hints_used",
+    "recent_performance"
+  ],
+  "target_classes": [
+    "easy",
+    "hard",
+    "medium"
+  ],
+  "confusion_matrix": [
+    [
+      157,
+      4,
+      29
+    ],
+    [
+      6,
+      68,
+      22
+    ],
+    [
+      42,
+      20,
+      152
+    ]
+  ],
+  "disclaimer": "CognitiveCare difficulty recommendations are for adaptive cognitive exercise comfort only. They do not constitute medical diagnoses, clinical staging, or treatment recommendations."
+}
